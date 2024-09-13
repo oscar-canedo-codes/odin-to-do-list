@@ -26,11 +26,14 @@
     "jest-environment-jsdom": "^29.7.0",
     "json5": "^2.2.3",
     "style-loader": "^4.0.0",
+    "stylelint": "^16.9.0",
+    "stylelint-selector-bem-pattern": "^4.0.1",
     "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
+    "date-fns": "^3.6.0",
     "lodash": "^4.17.21"
   }
 }

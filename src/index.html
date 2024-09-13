@@ -4,18 +4,45 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant Page</title>
+    <title>To Do List</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <button id="home">Home</button>
-            <button id="menu">Menu</button>
-            <button id="contact">Contact</button>
+            <h1>To Do List</h1>
+            <button id="createNew">+ New Project</button>
         </nav>
     </header>
-    <div id="content"></div>
+    <main id="content">
+        <article id="projects">
+            <h2>Projects</h2>
+            <div id="project-list">
+                <!-- Default Project -->
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Description 1</p>
+                    <button class="project__button">View</button>
+                    <button class="project__button">Delete</button>
+                    <button class="project__button">Edit</button>
+                    <button>Add Task</button>
+                    <button>Delete Project</button>
+                    <button>Complete Project</button>
+                </div>
+                <!-- End of Default Project -->
+                <!-- Modal: Create New Project -->
+                <div id="modal__create-new-project">
+                    <form id="form__create-new-project">
+                        <h2>Create New Project</h2>
+                        <input type="text" id="input__create-new-project" placeholder="Project Name">
+                        <button type="submit">Create</button>
+                        <button type="button" id="modal__create-new-project-cancel">Cancel</button>
+                    </form>
+                </div>
+                <!-- End of Modal: Create New Project -->
+            </div>
+        </article>
+    </main>
 </body>
 
 </html>
